@@ -4,7 +4,7 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { AgmCoreModule } from '@agm/core';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-
+import {HttpClientModule} from '@angular/common/http'
 
 
 @NgModule({
@@ -16,10 +16,11 @@ import { AppComponent } from './app.component';
     AppRoutingModule,
     FormsModule, 
     ReactiveFormsModule,
+    HttpClientModule,
     AgmCoreModule.forRoot({
       // please get your own API key here:
       // https://developers.google.com/maps/documentation/javascript/get-api-key?hl=en
-      apiKey: 'AIzaSyDmlA2BCI7Xge_qpSQHJthu-TDX5STvF-4'
+      apiKey: 'AIzaSyA6drxv-AWS04C1Po9-bU_1UQxKBX3lP2M'
     })
   ],
   providers: [],
